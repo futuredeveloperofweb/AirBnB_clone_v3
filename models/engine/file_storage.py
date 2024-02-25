@@ -74,7 +74,7 @@ class FileStorage:
         para:
             cls: class
             id:  string representing the object ID
-        return: the object based on the class and its ID, or 
+            return: the object based on the class and its ID, or
             None if not found
         '''
         if cls not in classes.values():
@@ -90,8 +90,8 @@ class FileStorage:
         para:
             cls: class
         return: the number of objects in storage matching the given
-            class. If no class is passed, returns the count of all
-            objects in storage.
+                class. If no class is passed, returns the count
+                of all objects in storage.
         '''
         all_cls = classes.values()
         if not cls:

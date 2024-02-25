@@ -81,9 +81,9 @@ class DBStorage:
             cls: class
             id: string representing the object ID
         return: object based on the class and its ID, or None if
-        not found
+                not found
         '''
-        if cls in classes.values() and id and type(id) == str:
+        if cls in classes.values() and id and type(id) is str:
             d_ob = self.all(cls)
             for key, value in d_ob.items():
                 if key.split('.')[1] == id:
